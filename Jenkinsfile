@@ -13,7 +13,7 @@ pipeline
         stage('build')
         {
             steps{
-             sh 'mvn compile'
+             build 'https://github.com/pulkitpan/simple-java-maven-app.git'
             }
         }
         stage('Test')
